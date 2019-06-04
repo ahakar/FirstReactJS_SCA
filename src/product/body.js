@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import ChildModal from './childmodal.js';
+import Modal from './modal.js';
 
-class child extends React.Component {
+class body extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
@@ -55,7 +55,7 @@ class child extends React.Component {
               			);
             		}))}
     			</div>
-    			<ChildModal dataSend={this.state.product}/>
+    			<Modal dataSend={this.state.product}/>
     		</div>
     	)
     }
@@ -68,4 +68,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(child);
+export default connect(mapStateToProps)(body);
