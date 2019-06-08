@@ -35,9 +35,18 @@ class modal extends React.Component {
 										<input type="text" className="form-control" placeholder="Quantity"/>
 									</div>
 									<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3">
-										<select className="form-control" id="state">
-									        <option selected>Size...</option>
-									    </select>
+										{(this.state.product.sizes) ?
+								        	<select className="form-control" id="state">
+										        {(this.state.product.sizes.split(',').map((data1, index) => {
+										        	console.log("$$$$", data1);
+													return(
+														<option value={data1}>{data1}</option>
+													);
+	            								}))}
+            								</select>
+    								 	:
+    								 		null
+        								}									    
 									</div>
 									<div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3">
 										<button type="button" className="btn btn-primary">Buy</button>
