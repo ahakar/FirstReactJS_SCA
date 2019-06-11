@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import {sendCartData} from '../actions/index.js';
+import {sendCartData} from '../../actions/index.js';
 
 class modal extends React.Component {
 	constructor(props) {

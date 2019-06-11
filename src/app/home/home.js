@@ -3,9 +3,9 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import axios from 'axios';
 
-import {loadProducts} from '../actions/index.js';
+import {loadProducts} from '../../actions/index.js';
 import Body from '../product/body.js';
-import Header from './header.js';
+import Header from '../layout/header.js';
 
 class home extends Component {
     constructor(props) {

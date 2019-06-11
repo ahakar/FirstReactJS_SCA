@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Header from '../home/header.js';
+import Header from '../layout/header.js';
 
 const divStyleInfo = {
     margin: '40px',

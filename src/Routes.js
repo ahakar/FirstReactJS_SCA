@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Route  } from 'react-router';
 import { Switch, HashRouter } from 'react-router-dom';
-import Home from './home/home.js';
-import Cart from './cart/home.js';
+import Home from './app/home/home.js';
+import Cart from './app/cart/home.js';
 
 export default class Routes extends Component {
 
