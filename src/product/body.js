@@ -31,7 +31,7 @@ class body extends React.Component {
 		return (
 			<div className="containerPage">
 				<div className="pt-3 text-right">
-					<Link to="/cart" className="btn btn-outline-info">View Cart ({this.state.cartCount})</Link>
+					<Link to="/cart" className="btn btn-outline-info">View Cart <span class="badge badge-pill badge-info">{this.state.cartCount}</span></Link>
 				</div>
 				<div className="row pt-3">
 					{(this.state.products.map((data, index) => {
